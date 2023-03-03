@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    justify-content:center;
   margin-bottom: 30px;
 }
 
@@ -75,9 +76,9 @@ nav {
     cursor: pointer;
 }
 
-    .search-btn:hover {
-        background-color: #990000;
-    }
+.search-btn:hover {
+    background-color: #990000;
+}
 
 .navbar-links {
     display: flex;
@@ -85,8 +86,17 @@ nav {
     text-decoration: none;
 }
 
-    .navbar-links a {
-        margin-right: 20px;
-        text-decoration: none;
-        border-bottom: none;
-    }
+.navbar-links a {
+     margin-right: 20px;
+     text-decoration: none;
+     border-bottom: none;
+}
+.telo {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.popul{
+    font-size:18px;
+}
