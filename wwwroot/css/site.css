@@ -14,8 +14,7 @@ html {
 }
 
 body {
-    justify-content:center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 nav {
@@ -25,25 +24,12 @@ nav {
 
 .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 5px;
-    margin: 0 10px;
-}
-
-.navbar-container div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin: 0 10px;
 }
 
 .navbar-brand a {
-    margin-right: 20px;
-    color: red;
-    text-decoration: none;
-    border-bottom: none;
 }
 
 #logo {
@@ -56,11 +42,9 @@ nav {
 .navbar-search form {
     display: flex;
     align-items: center;
-
 }
 
 .search-field {
-    width:350px;
     padding: 5px;
     margin-right: 5px;
     border: 1px solid #ccc;
@@ -76,9 +60,9 @@ nav {
     cursor: pointer;
 }
 
-.search-btn:hover {
-    background-color: #990000;
-}
+    .search-btn:hover {
+        background-color: #990000;
+    }
 
 .navbar-links {
     display: flex;
@@ -86,17 +70,9 @@ nav {
     text-decoration: none;
 }
 
-.navbar-links a {
-     margin-right: 20px;
-     text-decoration: none;
-     border-bottom: none;
-}
-.telo {
-    display: grid;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
-.popul{
-    font-size:18px;
-}
+    .navbar-links a {
+        margin-right: 20px;
+        color: red;
+        text-decoration: none;
+        border-bottom: none;
+    }
