@@ -16,3 +16,63 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar-brand a {
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.navbar-search form {
+    display: flex;
+    align-items: center;
+}
+
+.search-field {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+    .search-btn:hover {
+        background-color: #990000;
+    }
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+    .navbar-links a {
+        margin-right: 20px;
+        color: red;
+        text-decoration: none;
+        border-bottom: none;
+    }
