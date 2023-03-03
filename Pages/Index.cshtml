@@ -1,11 +1,38 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Главная";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<div> привет друзья </div> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TatExpress</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="telo">
+        <div class="carusel">
+            <img src="https://1.downloader.disk.yandex.ru/preview/b976cf6f67caaa14c0cdac7dd58a5e2f4367b51699ef2db56f0c105c2633f4bb/inf/Ev4Q5j1bBTqD2vGs4ebprnse7TV1rdIT0qY91Z0USe87MD7X7A2PUMPfee5GApe8bne--mJ1gtJ2A1vsmhz2bg%3D%3D?uid=733545969&filename=Slider.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=733545969&tknv=v2&size=1920x913" width="1100"/>
+        </div>
+        <div>
+            <p class="popul"><strong>Популярное  </strong>  Все˅</p>
+        </div>
+        <div class="catalog">
+            <div>
+                <img src="https://2.downloader.disk.yandex.ru/preview/375c164d36484f5ed6e059206fbdf962d02c33cb62208a089b879213d0588223/inf/lo5MtCosGTbj8vIj6IEJeIL2vjSYriqkCSaDjVGkIhA5gkqoDpxp2bBExFW0vYupurO63p_atpeEZR7LFnS3sA%3D%3D?uid=733545969&filename=Tovar1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=733545969&tknv=v2&size=1920x913" width="225" height="275"/>
+                <p>Фитнес браслет MI band 6 NFC</p>
+                <p><strong>3690₽ </strong>   ̶3̶6̶9̶0̶₽̶</p>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
