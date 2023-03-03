@@ -15,7 +15,7 @@ html {
 
 body {
     justify-content:center;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 nav {
@@ -99,4 +99,10 @@ nav {
 }
 .popul{
     font-size:18px;
+}
+.catalog {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
