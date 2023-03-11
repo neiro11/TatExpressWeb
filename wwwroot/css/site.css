@@ -85,11 +85,11 @@ nav {
     align-items: center;
     text-decoration: none;
 }
-
 .navbar-links a {
-     margin-right: 20px;
-     text-decoration: none;
-     border-bottom: none;
+        color: #111111;
+        margin-right: 20px;
+        text-decoration: none;
+        border-bottom: none;
 }
 .telo {
     display: grid;
