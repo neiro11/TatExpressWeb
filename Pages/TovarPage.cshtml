@@ -5,46 +5,47 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TatExpress</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
-</head>
-
-<body>
-    <div class="cart">
-        <div class="cart-header">
-            <h2>My Cart</h2>
-        </div>
-        <div class="cart-items">
-            <div class="item">
-                <img src="https://via.placeholder.com/50x50" alt="Product Image">
-                <div class="item-details">
-                    <h3>Product Name</h3>
-                    <p>Price: $10</p>
-                    <div class="quantity">
-                        <button class="minus-btn" type="button" name="button">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <input type="text" name="name" value="1">
-                        <button class="plus-btn" type="button" name="button">
-                            <i class="fas fa-plus"></i>
-                        </button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - TatExpress</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <div class="telo">
+            <div class="cart">
+                <div class="cart-header">
+                    <h2>Корзина</h2>
+                </div>
+                <div class="cart-items">
+                    <div class="item">
+                        <img src="~/img/Tovar1.png" alt="Product Image">
+                        <div class="item-details">
+                            <h3>Фитнес браслет MI band 6 NFC</h3>
+                            <p>Цена: 3690₽</p>
+                            <div class="quantity">
+                                <button class="minus-btn" type="button" name="button">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="plus-btn" type="button" name="button">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <button class="remove-btn" type="button" name="button">Удалить</button>
+                        </div>
                     </div>
-                    <button class="remove-btn" type="button" name="button">Remove</button>
+                </div>
+                <div class="cart-total">
+                    <h3>Итоговая стоимость: 3690₽</h3>
+                    <button class="checkout-btn" type="button" name="button">Оформить заказ</button>
                 </div>
             </div>
         </div>
-        <div class="cart-total">
-            <h3>Total: $10</h3>
-            <button class="checkout-btn" type="button" name="button">Checkout</button>
-        </div>
-    </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-</body>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
 </html>
