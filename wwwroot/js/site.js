@@ -29,4 +29,5 @@ nextBtn.addEventListener("click", () => {
 });
 
 function slide() {
-    slides.style.transform = `translateX(-${slideIndex * slideWidth}px)
+    slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`
+}
