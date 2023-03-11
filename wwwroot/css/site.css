@@ -118,7 +118,7 @@ nav {
 .cart {
     width: 1100px;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
 }
 
 .cart-header {
@@ -139,7 +139,7 @@ nav {
 
 .item {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 10px;
 }
 
@@ -156,13 +156,13 @@ nav {
     }
 
     .item-details p {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
 .quantity {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
     .quantity input {
@@ -186,7 +186,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 10px 0;
     border-top: 1px solid #ccc;
 }
 
@@ -197,4 +197,10 @@ nav {
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
+}
+.cena{
+    font-size: 20px;
+}
+.otovare{
+    font-size:18px;
 }
