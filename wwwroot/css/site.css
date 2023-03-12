@@ -1,3 +1,4 @@
+/*Для Layout*/
 html {
   font-size: 14px;
 }
@@ -92,6 +93,8 @@ nav {
     text-decoration: none;
     border-bottom: none;
 }
+
+/*Для Index + немного Layout(podval)*/
 .telo {
     display: grid;
     justify-content: center;
@@ -115,95 +118,7 @@ nav {
     justify-content: space-between;
 }
 
-.cart {
-    width: 1100px;
-    border: 1px solid #ccc;
-    padding: 15px;
-}
-
-.cart-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 5px 0;
-}
-
-    .cart-header h2 {
-        margin: 0;
-    }
-
-.cart-items {
-    margin: 10px 0;
-}
-
-.item {
-    display: flex;
-    align-items: start;
-    margin-bottom: 10px;
-}
-
-    .item img {
-        margin-right: 10px;
-    }
-
-.item-details {
-    flex-grow: 1;
-}
-
-    .item-details h3 {
-        margin: 0;
-    }
-
-    .item-details p {
-        margin: 10px 0;
-    }
-
-.quantity {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-    .quantity input {
-        width: 30px;
-        text-align: center;
-        border: none;
-        border-radius: 3px;
-        margin: 0 5px;
-    }
-
-.remove-btn {
-    background-color: #dc3545;
-    border: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.cart-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-top: 1px solid #ccc;
-}
-
-.checkout-btn {
-    background-color: #28a745;
-    border: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.cena{
-    font-size: 20px;
-}
-.otovare{
-    font-size:18px;
-}
+/*Для Index слайдер*/
 .slider {
     width: 1100px;
     height: 400px;
@@ -263,26 +178,131 @@ nav {
     margin-right: 20px;
 }
 
-label input {
-    display: none; /* <--скрываем дефолтный чекбокс */
+/*Для TovarPage корзина*/
+.cart {
+    display:grid;
+    width: 1100px;
+    border: 1px solid #ccc;
+    padding: 15px;
 }
 
-label span { /* <-- стилизируем новый */
-    height: 12px;
-    width: 12px;
-    border: 1px solid gray;
-    display: inline-block;
-    position: relative;
-    background-color: #FFF;
-    border-radius: 2px;
-    padding: 3px;
+.cart-header {
+    width:800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
 }
 
-[type=checkbox]:checked + span:before { /* <-- ставим иконку, когда чекбокс включен  */
-    content:image();
-    position: absolute;
-    top: -5px;
-    left: 0;
-    font-size: 23px;
-    color: green;
+    .cart-header h6 {
+        color:gray;
+        margin: 0;
+    }
+    .cart-header strong{
+        color:red;
+    }
+
+.cart-items {
+    margin: 10px 0;
 }
+
+.item {
+    width: 800px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+    .item img {
+        margin-right: 10px;
+    }
+
+.item-details {
+    flex-grow: 1;
+}
+
+    .item-details h3 {
+        margin: 0;
+    }
+
+    .item-details p {
+        margin: 10px 0;
+    }
+
+.quantity {
+    border: 1px solid black;
+    width:85px;
+    padding:0 5px 0 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+    .quantity input {
+        width: 30px;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        margin: 0 5px;
+    }
+
+.remove-btn {
+    background-color: white;
+    border: none;
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+    .remove-btn:hover {
+        color: black;
+        transform: scale(1.05);
+    }
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.checkout-btn {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cena{
+    font-size: 20px;
+}
+.otovare{
+    font-size:18px;
+}
+
+
+label{
+    font-size:24px;
+}
+
+    /* формируем внешний вид чекбокса в псевдоэлементе before */
+    label:before {
+        content: "\2714";
+        color: #000;
+        display: inline-block;
+        font: 20px/30px Arial;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        width: 30px;
+        height: 30px;
+        background: #FFF;
+        border: 1px solid #e3e3e3;
+        border-image: initial;
+        vertical-align: middle;
+    }
