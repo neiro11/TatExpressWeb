@@ -278,8 +278,6 @@ nav {
 }
 .cart-total-up {
     text-align:center;
-    border-bottom: 1px solid #ccc;
-    padding: 0 0 10px 0;
 }
     .cart-total-up h5 {
         font-family: Roboto, sans-serif;
