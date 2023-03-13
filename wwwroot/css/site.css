@@ -23,7 +23,7 @@ nav {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
-
+/*Шапка в Layout*/
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -122,21 +122,24 @@ nav {
     border-bottom: none;
 }
 
-/*Для Index + немного Layout(podval)*/
+/*Для Index + немного Layout(podval) + TovarPage(telo/catalog)*/
 .telo {
     display: grid;
     justify-content: center;
     padding: 10px;
     margin: 10px;
 }
+/*Популярное в Index*/
 .popul{
     font-size:18px;
 }
+/*Список товаров в Index и TovarPage*/
 .catalog {
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 .podval {
     padding-top: 70px;
@@ -144,6 +147,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+/*Иконка добавить в корзину для всех товаров*/
+.dobavit{
+    float:right;
+    margin-right:10px;
 }
 
 /*Для Index слайдер*/
