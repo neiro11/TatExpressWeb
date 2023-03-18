@@ -274,6 +274,11 @@ nav {
 .counter {
     display: flex;
     align-items: center;
+    
+}
+.counter button{
+    background: none;
+    border: 1px solid #ccc;
 }
 
 #count {
