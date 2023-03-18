@@ -286,14 +286,6 @@ nav {
     text-align: center;
     margin: 0 10px;
 }
-#decremen {
-    border: none;
-    background-color: none;
-}
-#increment {
-    border: none;
-    background-color: none;
-}
 
 .remove-btn {
     background-color: white;

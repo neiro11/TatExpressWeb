@@ -60,15 +60,11 @@
                                 <br />Спортивная версия Версия без NFC Спортивная версия
                             </p>
                             <p class="cena">Цена: 3690₽</p>
-                                <div class="quantity">
-                                    <button class="minus-btn" type="button" name="button">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input type="text" name="name" value="1">
-                                    <button class="plus-btn" type="button" name="button">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
+                        <div class="counter">
+                            <button id="decrement">-</button>
+                            <div id="count">1</div>
+                            <button id="increment">+</button>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -182,6 +178,22 @@
         document.getElementById('checkout-product').addEventListener('click', function (event) {
             event.preventDefault();
             alert('Система оформления заказа временно недоступна)');
+        });
+        const decrementButton = document.getElementById("decrement");
+        const incrementButton = document.getElementById("increment");
+        const countElement = document.getElementById("count");
+        let count = 1;
+
+        decrementButton.addEventListener("click", () => {
+            if (count > 1) {
+                count--;
+                countElement.textContent = count;
+            }
+        });
+
+        incrementButton.addEventListener("click", () => {
+            count++;
+            countElement.textContent = count;
         });
     </script>
     </body>

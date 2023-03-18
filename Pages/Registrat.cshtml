@@ -1,9 +1,95 @@
 ﻿@page
 @model WebApplication1.Pages.RegistratModel
 @{
-    ViewData["Title"] = "Недоступно";
+    ViewData["Title"] = "Регистрация";
 }
-<p style="text-align:center; color:#ccc; font: 20px Arial; padding:20%;">
-    Страница временно недоступна
-    <br />Приносим свои извинения за предоставленные неудобства
-</p>
+<head>
+    <style>
+        .container1 {
+            max-width: 500px;
+            margin: 5% auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .f1 {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .label1 {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .inpt {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f2f2f2;
+        }
+
+        .butn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #e53935;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            .butn:hover {
+                background-color: #a00000;
+            }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h1>Регистрация</h1>
+        <form class="f1">
+            <label class="label1" for="username">Логин:</label>
+            <input class="inp" type="text" id="username" name="username" required>
+            <label class="label1" for="password">Пароль:</label>
+            <input class="inp" type="password" id="password" name="password" required>
+            <label class="label1" for="phone">Телефон:</label>
+            <input class="inp" type="tel" id="phone" name="phone" required>
+            <label class="label1" for="email">Почта:</label>
+            <input class="inp" type="email" id="email" name="email" required>
+            <p style="display:flex; justify-content:center;"><button class="butn" type="submit" id="register-btn">Зарегистрироваться</button></p>
+        </form>
+        <p><a href="Autoriz" id="voiti">Есть аккаунт? Войти!</a></p>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const username = document.querySelector('#username');
+        const password = document.querySelector('#password');
+        const phone = document.querySelector('#phone');
+        const email = document.querySelector('#email');
+        const registerBtn = document.querySelector('#register-btn');
+
+        form.addEventListener('submit', (event) => {
+         event.preventDefault();
+         const enteredUsername = username.value;
+         const enteredPassword = password.value;
+         const enteredPhone = phone.value;
+         const enteredEmail = email.value;
+
+         if (enteredUsername === '' || enteredPassword === '' || enteredPhone === '' || enteredEmail === '') {
+          alert('Please fill out all fields.');
+         } else {
+          alert('Registration successful!');
+         }
+        });
+    </script>
+</body>
