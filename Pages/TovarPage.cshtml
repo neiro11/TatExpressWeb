@@ -27,7 +27,7 @@
                         <div class="item-details">
                         <div class="o">Фитнес браслет MI band 6 NFC 
                             <div class="s4et">
-                                <button class="remove-btn" type="button" name="button"><img src="~/img/542724.png" width="20px" height="20px" />Удалить</button>
+                                <button class="remove-btn" type="button" name="button" id="remove-from-cart"><img src="~/img/542724.png" width="18px" height="18px" />Удалить</button>
                             </div>
                         </div>
                         
@@ -66,7 +66,7 @@
                         <span class="span3">Итого:</span>
                         <span class="span4">3690₽</span>
                     </p>
-                        <button class="checkout-btn" type="button" name="button">Оформить заказ</button>
+                        <button class="checkout-btn" type="button" name="button" id="checkout-product">Оформить заказ</button>
                     </div>
                 </div>
             </div>
@@ -154,5 +154,15 @@
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.getElementById('remove-from-cart').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Товар невозможно удалить из корзины)');
+        });
+        document.getElementById('checkout-product').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Система оформления заказа временно недоступна)');
+        });
+    </script>
     </body>
 </html>

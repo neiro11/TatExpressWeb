@@ -24,6 +24,10 @@
         .product {
             display: flex;
             flex-wrap: wrap;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
         }
 
         .product-image {
@@ -57,18 +61,21 @@
             text-decoration: none;
             font-size: 16px;
             margin-top: 10px;
-            border-radius:5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
         }
 
             .button:hover {
-                background-color: #e33333;
+                color:white;
+                background-color: #e22222;
+                transform: scale(1.05);
             }
 
         .add-btn {
             background-color: white;
             border: none;
             color: grey;
-            padding: 5px;
             border-radius: 3px;
             cursor: pointer;
             transition: all .2s ease-in-out;
@@ -80,36 +87,73 @@
             }
 
         .s4et {
-            font: 16px Arial;
+            font: 14px Arial;
             float: right;
         }
+        .o-tovare{
+            padding-top:10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .quantity {
+            border: 1px solid black;
+            width: 85px;
+            padding: 0 5px 0 5px;
+            display: flex;
+            align-items: center;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+            .quantity input {
+                width: 30px;
+                text-align: center;
+                border: none;
+                border-radius: 3px;
+                margin: 0 5px;
+            }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="product">
             <div class="product-image">
-                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
-                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
-                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
-                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
-                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="71"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="71"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="71"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="71"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="71"></p>
             </div>
-            <img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="300" height="420" style="padding: 0 20px 0 10px;">
+            <img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="300" height="430" style="padding: 0 20px 0 10px;">
             <div class="product-info">
-                <h1 class="product-title">Фитнес браслет MI band 6 NFC</h1>
                 <div class="s4et">
-                    <button class="add-btn" type="button" name="button"><img src="~/img/Heart.svg" width="20px" height="20px" />В избранное</button>
+                    <button class="add-btn" type="button" name="button" id="add-to-like"><img src="~/img/Heart.svg" width="20px" height="20px" />В избранное</button>
                 </div>
-
+                <h1 class="product-title">Фитнес браслет MI band 6 NFC</h1>
                 <p>
-                    О товаре:
-                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
-                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
-                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
-                    <br />Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
+                    Продавец: Aznakaevskiy
                 </p>
-                <p class="price">3690₽  <s>  3690₽</s></p>
+                <p>
+                    Доставка: 1 день, бесплатно
+                </p >
+                <p class="o-tovare">
+                    О товаре:
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия 
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия 
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия 
+                </p>
+                <h6>Цена:</h6>
+                <p class="price"><strong>3690₽</strong>  <s>  3690₽</s></p>
+                <h6>Количество:</h6>
+                <div class="quantity">
+                    <button class="minus-btn" type="button" name="button">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="plus-btn" type="button" name="button">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
                 <a href="#" class="button" id="add-to-cart">В корзину</a>
             </div>
         </div>
@@ -119,6 +163,10 @@
         document.getElementById('add-to-cart').addEventListener('click', function (event) {
             event.preventDefault();
             alert('Товар добавлен в корзину!');
+        });
+        document.getElementById('add-to-like').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Товар добавлен в избранное!');
         });
     </script>
 </body>
