@@ -271,23 +271,16 @@ nav {
         margin: 5px;
     }
 
-.quantity {
-    border: 1px solid black;
-    width:85px;
-    padding:0 5px 0 5px;
+.counter {
     display: flex;
     align-items: center;
-    margin: 5px;
-    border-radius:5px;
 }
 
-    .quantity input {
-        width: 30px;
-        text-align: center;
-        border: none;
-        border-radius: 3px;
-        margin: 0 5px;
-    }
+#count {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
 
 .remove-btn {
     background-color: white;

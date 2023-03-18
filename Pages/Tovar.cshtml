@@ -146,14 +146,10 @@
                 <h6>Цена:</h6>
                 <p class="price"><strong>3690₽</strong>  <s>  3690₽</s></p>
                 <h6>Количество:</h6>
-                <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">
-                        <i class="fas fa-minus"></i>
-                    </button>
-                    <input type="text" name="name" value="1">
-                    <button class="plus-btn" type="button" name="button">
-                        <i class="fas fa-plus"></i>
-                    </button>
+                <div class="counter">
+                    <button id="decrement">-</button>
+                    <div id="count">0</div>
+                    <button id="increment">+</button>
                 </div>
                 <a href="#" class="button" id="add-to-cart">В корзину</a>
             </div>
@@ -168,6 +164,21 @@
         document.getElementById('add-to-like').addEventListener('click', function (event) {
             event.preventDefault();
             alert('Товар добавлен в избранное!');
+        });
+        const decrementButton = document.getElementById("decrement");
+        const incrementButton = document.getElementById("increment");
+        const countElement = document.getElementById("count");
+
+        let count = 0;
+
+        decrementButton.addEventListener("click", () => {
+            count--;
+            countElement.textContent = count;
+        });
+
+        incrementButton.addEventListener("click", () => {
+            count++;
+            countElement.textContent = count;
         });
     </script>
 </body>
