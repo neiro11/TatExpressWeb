@@ -1,9 +1,94 @@
 ﻿@page
 @model WebApplication1.Pages.Index1Model
 @{
-    ViewData["Title"] = "Недоступно";
+    ViewData["Title"] = "Авторизация";
 }
-<p style="text-align:center; color:#ccc; font: 20px Arial; padding:20%;">
-    Страница временно недоступна
-    <br />Приносим свои извинения за предоставленные неудобства
-</p>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #888888;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #3e8e41;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Authorization Page</h1>
+        <form>
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="login-btn">Log In</button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const username = document.querySelector('#username');
+        const password = document.querySelector('#password');
+        const loginBtn = document.querySelector('#login-btn');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const enteredUsername = username.value;
+            const enteredPassword = password.value;
+
+            // You can replace this with your own authentication logic
+            if (enteredUsername === 'admin' && enteredPassword === 'password') {
+                alert('Logged in successfully!');
+            } else {
+                alert('Incorrect username or password.');
+            }
+        });
+    </script>
+</body>

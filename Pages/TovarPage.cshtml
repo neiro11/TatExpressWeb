@@ -1,6 +1,7 @@
 ﻿@page
 @model WebApplication1.Pages.TovarPageModel
 @{
+    ViewData["Title"] = "Корзина";
 }
 
 <!DOCTYPE html>
@@ -12,6 +13,25 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+        <style>
+            /* Делаем внешний вид чекбокса в псевдоэлементе before */
+            label:before {
+                content: "\2714";
+                color: #000;
+                display: inline-block;
+                font: 20px/30px Arial;
+                margin-right: 15px;
+                position: relative;
+                text-align: center;
+                text-indent: 0px;
+                width: 30px;
+                height: 30px;
+                background: #FFF;
+                border: 1px solid #e3e3e3;
+                border-image: initial;
+                vertical-align: middle;
+            }
+        </style>
     </head>
     <body>
     <div class="telo">
