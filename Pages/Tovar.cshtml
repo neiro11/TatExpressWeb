@@ -1,9 +1,124 @@
 ﻿@page
 @model WebApplication1.Pages.TovarModel
 @{
-    ViewData["Title"] = "Недоступно";
+    ViewData["Title"] = "Товар";
 }
-<p style="text-align:center; color:#ccc; font: 20px Arial; padding:20%;">
-    Страница временно недоступна
-    <br />Приносим свои извинения за предоставленные неудобства
-</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliExpress Marketplace Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-image {
+            padding-top:3px;
+            float:left;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        .price s{
+            padding-left:10px;
+            color:#ccc;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e53935;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius:5px;
+        }
+
+            .button:hover {
+                background-color: #e33333;
+            }
+
+        .add-btn {
+            background-color: white;
+            border: none;
+            color: grey;
+            padding: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+            .add-btn:hover {
+                color: black;
+                transform: scale(1.05);
+            }
+
+        .s4et {
+            font: 16px Arial;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="product-image">
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+                <p><img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="60" height="70"></p>
+            </div>
+            <img src="~/img/Tovar1.png" alt="Это не Фитнес браслет MI band 6 NFC" width="300" height="420" style="padding: 0 20px 0 10px;">
+            <div class="product-info">
+                <h1 class="product-title">Фитнес браслет MI band 6 NFC</h1>
+                <div class="s4et">
+                    <button class="add-btn" type="button" name="button"><img src="~/img/Heart.svg" width="20px" height="20px" />В избранное</button>
+                </div>
+
+                <p>
+                    О товаре:
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
+                    <br /> Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
+                    <br />Версия без NFC Спортивная версия Версия без NFC Спортивная версия Версия без NFC Спортивная версия
+                </p>
+                <p class="price">3690₽  <s>  3690₽</s></p>
+                <a href="#" class="button" id="add-to-cart">В корзину</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('add-to-cart').addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('Товар добавлен в корзину!');
+        });
+    </script>
+</body>
