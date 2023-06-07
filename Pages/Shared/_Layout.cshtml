@@ -3,34 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication1</title>
+    <title>@ViewData["Title"] - TatExpress</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">WebApplication1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">TatExpress</a>
-                        </li>
-                        <li class="nav-item">
-                            <input class="nav-link text-dark" asp-area="" asp-page="/Index"/>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a id="logo" href="Index">TatExpress</a>
             </div>
+                <div class="navbar-links">
+                    <a id="categor" href="Index"><img src="~/img/Document.png" width="30" height="30"/>Категории</a>
+            </div>
+            <div class="navbar-search">
+                <form>
+                    <input type="text" placeholder="Искать товары" class="search-field">
+                    <button type="submit" class="search-btn">Найти</button>
+                </form>
+            </div>
+            <div class="navbar-links">
+                    <a href="#" id="voiti"><img src="~/img/Profile.png" /> Войти</a>
+                    <a href="#" id="like"><img src="~/img/Heart.png" /> Избранное</a>
+                    <a href="TovarPage" id="korz"><img src="~/img/Buy.png" />Корзина</a>
+            </div>
+        </div>
         </nav>
     </header>
     <div class="container">
@@ -38,12 +37,53 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - WebApplication1 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <div class="telo">
+        <div class="podval">
+            <div>
+                <p>TatExpress в соцсетях</p>
+                <p>
+                    <img src="~/img/image 1.png" />
+                    <img src="~/img/image 2.png" />
+                    <img src="~/img/image 3.png" />
+                    <img src="~/img/image 4.png" />
+                </p>
+                <p>
+                    Скачать приложение
+                    <br /><img src="~/img/image 5.png" width="125" />
+                    <img src="~/img/image 2 (1).png" width="125" />
+                </p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
+            <div>
+                <p><strong>О нас</strong></p>
+                <p>О компании</p>
+                <p>Вакансии</p>
+                <p>СМИ о нас</p>
+                <p>Контакты</p>
+                <p>Пункты выдачи</p>
+            </div>
         </div>
-    </footer>
+</div>
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - TatExpress - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

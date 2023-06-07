@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1
+namespace WebApplication1.Pages
 {
-    public class FOR_EXAMPLEModel : PageModel
+    public class TovarModel : PageModel
     {
         public void OnGet()
         {

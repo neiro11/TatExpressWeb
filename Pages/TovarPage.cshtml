@@ -1,0 +1,158 @@
+﻿@page
+@model WebApplication1.Pages.TovarPageModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] Корзина - TatExpress</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+    <div class="telo">
+        <h2>Ваша корзина</h2>
+            <div class="cart">
+                <div class="cart-header">
+                <label>Снять всё</label>
+                    <h>Ближайшая дата доставки: <strong>Завтра</strong></h>
+                </div>
+                <div class="cart-items">
+                    <div class="item">
+                        <img src="~/img/Tovar1.png" alt="Product Image" width="150" height="220">
+                        <div class="item-details">
+                        <div class="o">Фитнес браслет MI band 6 NFC 
+                            <div class="s4et">
+                                <button class="remove-btn" type="button" name="button"><img src="~/img/542724.png" width="20px" height="20px" />Удалить</button>
+                            </div>
+                        </div>
+                        
+                            <p class="otovare">
+                                Кратко о товаре:
+                                <br /> Версия без NFC Спортивная версия Версия без NFC
+                                <br />Спортивная версия Версия без NFC Спортивная версия
+                                <br /> Версия без NFC Спортивная версия Версия без NFC
+                                <br /> Версия без NFC Спортивная версия Версия без NFC
+                                <br />Спортивная версия Версия без NFC Спортивная версия
+                            </p>
+                            <p class="cena">Цена: 3690₽</p>
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" name="name" value="1">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div class="cart-total-up">
+                        <h3>Ваш заказ</h3>
+                    <p>
+                        <span class="span3">Товары (1):</span>
+                        <span class="span4">3690₽</span>
+                    </p>
+                    </div>
+                <p class="dostavleno">Будет доставлено: Завтра</p>
+                <div class="cart-total-down">
+                    <p>
+                        <span class="span3">Итого:</span>
+                        <span class="span4">3690₽</span>
+                    </p>
+                        <button class="checkout-btn" type="button" name="button">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reki">
+                    <p class="setim">С этим товаром покупают</p>
+                    <div class="catalog">
+                        <div>
+                            <a href="Tovar"><img src="~/img/Tovar1.png" width="225" height="275" /></a>
+                            <p>Фитнес браслет MI band 6 NFC</p>
+                            <p>
+                                <strong>3690₽ </strong>
+                                <s>3690₽ </s>
+                        <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                            </p>
+                        </div>
+                        <div>
+                            <img src="~/img/Tovar1.png" width="225" height="275" />
+                            <p>Фитнес браслет MI band 6 NFC</p>
+                            <p>
+                                <strong>3690₽ </strong>
+                                <s>3690₽ </s>
+                        <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                            </p>
+                        </div>
+                        <div>
+                            <img src="~/img/Tovar1.png" width="225" height="275" />
+                            <p>Фитнес браслет MI band 6 NFC</p>
+                            <p>
+                                <strong>3690₽ </strong>
+                                <s>3690₽ </s>
+                                <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                            </p>
+                        </div>
+                        <div>
+                            <img src="~/img/Tovar1.png" width="225" height="275" />
+                            <p>Фитнес браслет MI band 6 NFC</p>
+                            <p>
+                                <strong>3690₽ </strong>
+                                <s>3690₽ </s>
+                                <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                            </p>
+                        </div>
+                    </div>
+                <p class="pohoj">Похожее</p>
+                <div class="catalog">
+                    <div>
+                        <a href="Tovar"><img src="~/img/Tovar1.png" width="225" height="275" /></a>
+                        <p>Фитнес браслет MI band 6 NFC</p>
+                        <p>
+                            <strong>3690₽ </strong>
+                            <s>3690₽ </s>
+                            <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                        </p>
+                    </div>
+                    <div>
+                        <img src="~/img/Tovar1.png" width="225" height="275" />
+                        <p>Фитнес браслет MI band 6 NFC</p>
+                        <p>
+                            <strong>3690₽ </strong>
+                            <s>3690₽ </s>
+                            <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                        </p>
+                    </div>
+                    <div>
+                        <img src="~/img/Tovar1.png" width="225" height="275" />
+                        <p>Фитнес браслет MI band 6 NFC</p>
+                        <p>
+                            <strong>3690₽ </strong>
+                            <s>3690₽ </s>
+                        <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                        </p>
+                    </div>
+                    <div>
+                        <img src="~/img/Tovar1.png" width="225" height="275" />
+                        <p>Фитнес браслет MI band 6 NFC</p>
+                        <p>
+                            <strong>3690₽ </strong>
+                            <s>3690₽ </s>
+                        <img class="dobavit" src="~/img/buy1.png" width="20" height="20" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>
